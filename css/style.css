@@ -1,5 +1,17 @@
 :root {
-  --blue: #004592;
+  --blue: #26ACE3;
+  --eclaircies: #00b3a4;
+  --ensoleille: rgb(211, 179, 0);
+  --averses-de-pluie-faible: #699dc0;
+  --ciel-voile: #abb9c2;
+  --nuit-legerement-voilee: #8182a0;
+  --nuit-nuageuses: #6d657e;
+  --nuit-avec-averse: #38395e;
+  --passages-nuageux: #676474;
+  --pluie-faible: #768dac;
+  --nuit-claire: #484ab9;
+  --fortement-nuageux: #555555;
+  --stratus: #333450;
 }
 
 body {
@@ -7,19 +19,68 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(0deg, var(--blue) 45%, #9b93d8 110%);
+  background: var(--blue);
 }
 
 .div-top {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 240px);
+  color: #fff;
+}
+
+.div-top:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 23px;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#date-0 {
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.div-bottom {
+  width: 90%;
+  display: flex;
+  padding: 5px 30px;
+  justify-content: space-between;
 }
 
 .other-day-box {
   height: 60px;
-  width: 100%;
+  width: 90%;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.other-day-box p {
+  font-size: 15px;
+  color: #3d3d3d;
+}
+
+.other-day-box img {
+  height: 20px;
+  width: 20px;
 }
 
 .other-day-box:after {
@@ -27,9 +88,9 @@ body {
   position: absolute;
   height: 1px;
   bottom: 0;
-  margin-left: 40px;
-  background: rgba(243, 243, 243, 0.466);
-  width: 80%;
+  margin-left: 0px;
+  background: rgba(145, 145, 145, 0.301);
+  width: 90%;
 }
 
 p {
@@ -37,10 +98,19 @@ p {
 }
 
 .other-day {
-  height: 300px;
+  height: 240px;
   width: 100%;
-  background: var(--blue);
-  margin-bottom: 60px;
+  border-radius: 5px 5px 0 0;
+  background: rgba(255, 255, 255, 0.884);
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  height: 200px;
+  width: 200px;
 }
 
 .input {
@@ -48,37 +118,128 @@ p {
 }
 
 .form-control {
-  background: var(--blue);
+  background: white;
   border: none;
-  color: white;
-  border-bottom: 1px solid silver;
+  color: black;
+  border-bottom: 1px solid dimgray;
 }
 
 .form-control::placeholder {
-  color: #cecece;
+  color: black;
 }
 
-.btn-outline-secondary:hover {
-  background: var(--blue);
+.btn-search:hover {
+  background: #505050;
 }
 
-.btn {
-  color: #fff;
-}
-
-.btn:hover {
-  background: rgba(243, 243, 243, 0.466);
+.btn-search {
+  background: #6e6e6e;
+  color: white;
 }
 
 .div-input {
-  background: var(--blue);
+  background: white;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 0px 5px 5px rgba(117, 117, 117, 0.123);
 }
 
 .input-group {
   height: 40px;
   width: 90%;
+}
+
+#direction-vent {
+  background-image: url("/img/rose-des-vents.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 25px;
+}
+
+.div-bottom img {
+  height: 100%;
+  width: 20px;
+}
+
+.N {
+  transform: rotate(0);
+}
+
+.NO {
+  transform: rotate(-45deg);
+}
+
+.O {
+  transform: rotate(-90deg);
+}
+
+.NE {
+  transform: rotate(45deg);
+}
+
+.E {
+  transform: rotate(90deg);
+}
+
+.SO {
+  transform: rotate(-135deg);
+}
+
+.SE {
+  transform: rotate(135deg);
+}
+
+.S {
+  transform: rotate(180deg);
+}
+
+.eclaircies {
+  background: var(--eclaircies);
+}
+
+.ensoleille {
+  background: var(--ensoleille);
+}
+
+.averses-de-pluie-faible {
+  background: var(--averses-de-pluie-faible);
+}
+
+.ciel-voile {
+  background: var(--ciel-voile);
+}
+
+.nuit-legerement-voilee {
+  background: var(--nuit-legerement-voilee);
+}
+
+.nuit-nuageuse {
+  background: var(--nuit-nuageuses);
+}
+
+.nuit-claire {
+  background: var(--nuit-claire);
+}
+
+.nuit-avec-averses {
+  background: var(--nuit-avec-averse);
+}
+
+.faibles-passages-nuageux {
+  background: var(--passages-nuageux);
+}
+
+.fortement-nuageux {
+  background: var(--fortement-nuageux);
+}
+
+.pluie-faible {
+  background: var(--pluie-faible);
+}
+
+.stratus {
+  background: var(--stratus);
 }
