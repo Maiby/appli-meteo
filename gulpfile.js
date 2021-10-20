@@ -9,7 +9,7 @@ const webp = require('gulp-webp');
 async function style() {
     return gulp.src('scss/*.scss')
     .pipe(sass().on('error',sass.logError))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('css/'))
     .pipe(browserSync.stream());
 }
 
