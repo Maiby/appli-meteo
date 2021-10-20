@@ -1,6 +1,11 @@
 $(function() {
 
-  var ville = "paris";
+ 
+       var ville= "Bruxelles-1";
+
+
+
+
 
     $.ajax( {
         url: "https://www.prevision-meteo.ch/services/json/"+ville,
@@ -18,10 +23,29 @@ $(function() {
     }); //ajax
 
 
+
+
+
+
+
+
+
+
+        
     $( "#button-addon2" ).click(function() {
 
         var ville = $(".form-control").val();
     
+
+
+
+    
+            if( ville == "bruxelles" ||  ville == "Bruxelles" ){
+                ville= "bruxelles-1"
+
+
+            }
+        
 
         $.ajax({
             //1 définir le fichier à appeler
@@ -87,4 +111,8 @@ $(function() {
         
         
     }); //click
+
+
+
+
 });//function
