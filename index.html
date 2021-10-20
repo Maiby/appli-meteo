@@ -1,55 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="ville">    <button id="go">GO</button>
-    <img  id="bg-image-0" src="" alt="">
-    <div id="condition-0"></div>
-    <p id="date-0"></p>
-    <p id="day-0"></p>
-    <p id="city"></p>
-    <p id="temp-actu"></p>
-    <p id="humidity"></p>
-    <p id="vitesse-vent"></p>
-    <p id="direction-vent"></p>
-    <p id="pression"></p>
 
-    <img  id="bg-image-1" src="" alt="">
-    <div id="condition-1"></div>
-    <p id="date-1"></p>
-    <p id="day-1"></p>
-    <p id="temp-max-1"></p>
-    <p id="temp-min-1"></p>
-    
+    <div class="div-top">
+        <div class="div-input">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Introduisez le nom de la ville" aria-label="Introduisez le nom de la ville" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Recherche</button>
+              </div>
+        </div>
+        <div class="div-top">
+            <h1 id="day-0"></h1>
+            <p id="date-0"></p>
+            <img id="bg-image-0" src="" alt="">
+            <p id="condition-0"></p>
+            <h2 id="degree"></h2>
+            <div class="div-bottom">
+                <p id="city"></p>
+                <p id="humidity"></p>
+                <p id="vitesse-vent"></p>
+                <p id="direction-vent"></p>
+                <p id="pression"></p>
+            </div>
+        </div>
+    </div>
+    <div class="other-day">
+        <div class="other-day-box">
+            <p id="day-1"></p>
+            <p id="date-1"></p>
+            <p id="condition-1"></p>
+            <p id="temp-max-1"></p>
+            <p id="temp-min-1"></p>
+            <img id="bg-image-1" src="" alt="">
 
-    <img  id="bg-image-2" src="" alt="">
-    <div id="condition-2"></div>
-    <p id="date-2"></p>
-    <p id="day-2"></p>
-    <p id="temp-max-2"></p>
-    <p id="temp-min-2"></p>
-    
+        </div>
+        <div class="other-day-box">
+            <p id="day-2"></p>
+            <p id="date-2"></p>
+            <p id="condition-2"></p>
+            <p id="temp-max-2"></p>
+            <p id="temp-min-2"></p>
+            <img id="bg-image-2" src="" alt="">
+        </div>
+        <div class="other-day-box">
+            <p id="day-3"></p>
+            <p id="date-3"></p>
+            <p id="condition-3"></p>
+            <p id="temp-max-3"></p>
+            <p id="temp-min-3"></p>
+            <img id="bg-image-3" src="" alt="">
+        </div>
+        <div class="other-day-box">
+            <p id="day-4"></p>
+            <p id="date-4"></p>
+            <p id="condition-4"></p>
+            <p id="temp-max-4"></p>
+            <p id="temp-min-4"></p>
+            <img id="bg-image-4" src="" alt="">
+        </div>
+        
+        
+    </div>
 
-    <img  id="bg-image-3" src="" alt="">
-    <div id="condition-3"></div>
-    <p id="date-3"></p>
-    <p id="day-3"></p>
-    <p id="temp-max-3"></p>
-    <p id="temp-min-3"></p>
-    
-
-    <img  id="bg-image-4" src="" alt="">
-    <div id="condition-4"></div>
-    <p id="date-4"></p>
-    <p id="day-4"></p>
-    <p id="temp-max-4"></p>
-    <p id="temp-min-4"></p>
       
 </body>
 <script src="js/jquery-3.6.0.js"></script>

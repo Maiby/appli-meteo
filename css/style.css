@@ -1,0 +1,84 @@
+:root {
+  --blue: #004592;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, var(--blue) 45%, #9b93d8 110%);
+}
+
+.div-top {
+  height: calc(100vh - 300px);
+}
+
+.other-day-box {
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.other-day-box:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  margin-left: 40px;
+  background: rgba(243, 243, 243, 0.466);
+  width: 80%;
+}
+
+p {
+  margin: 0;
+}
+
+.other-day {
+  height: 300px;
+  width: 100%;
+  background: var(--blue);
+  margin-bottom: 60px;
+}
+
+.input {
+  border: none;
+}
+
+.form-control {
+  background: var(--blue);
+  border: none;
+  color: white;
+  border-bottom: 1px solid silver;
+}
+
+.form-control::placeholder {
+  color: #cecece;
+}
+
+.btn-outline-secondary:hover {
+  background: var(--blue);
+}
+
+.btn {
+  color: #fff;
+}
+
+.btn:hover {
+  background: rgba(243, 243, 243, 0.466);
+}
+
+.div-input {
+  background: var(--blue);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  height: 40px;
+  width: 90%;
+}
