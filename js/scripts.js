@@ -18,9 +18,9 @@ $(function() {
     }); //ajax
 
 
-    $( "#go" ).click(function() {
+    $( "#button-addon2" ).click(function() {
 
-        var ville = $("#ville").val();
+        var ville = $(".form-control").val();
     
 
         $.ajax({
@@ -56,7 +56,7 @@ $(function() {
                 $("#day-3").html(monObjet.fcst_day_3.day_long);
                 $("#day-4").html(monObjet.fcst_day_4.day_long);
 
-                $("#temp-actu").html(monObjet.current_condition.tmp);
+                $("#degree").html(monObjet.current_condition.tmp);
                 $("#temp-max-1").html(monObjet.fcst_day_1.tmax);
                 $("#temp-max-2").html(monObjet.fcst_day_2.tmax);
                 $("#temp-max-3").html(monObjet.fcst_day_3.tmax);
